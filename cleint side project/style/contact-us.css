@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding : 0px;
+    margin:   0px ;
+    box-sizing: border-box;        
+}
+nav {
+  position: -webkit-sticky;
+position: -moz-sticky;
+position: -ms-sticky;
+position: -o-sticky;
+position: sticky !important;
+top: -1.0px;
+z-index: 2;
+}
+nav ul{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    background-color: #000000;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+nav a{
+    color: rgb(255, 255, 255);
+}
+nav  li:hover{
+   
+    list-style: none;
+    display: flex;
+    background-color: rgb(160, 156, 156);
+    justify-content: space-around;
+ 
+    align-items: center;
+}
+nav .dropbtn {
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+background-color: rgb(0, 0, 0);
+
+}
+
+nav .dropdown {
+position: relative;
+background-color: rgb(0, 0, 0);
+display: inline-block;
+}
+
+nav .dropdown-content {
+display: none;
+position: absolute;
+background-color: rgb(89, 0, 255);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+nav .dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(160, 156, 156);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(160, 156, 156);}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(laps.jpg);
+    background-size: cover;
+
+}
+.contact  .content{
+    max-width: 800px;
+    text-align: center;
+    flex-direction: column;        
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: rgb(221, 6, 6);
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.container .ContactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .ContactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .ContactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+    background: black;
+    background-size: 12px;
+}
+.container .ContactInfo .box .text
+{
+    /* display: flex; */
+    margin-left: 20px;
+    font-size: 16px;
+    columns: rgb(0, 0, 0);
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .ContactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform
+{
+    width: 30%;
+    padding: 40px;
+    background: rgb(207, 91, 91);
+    align-items: center;
+    justify-content: center;
+}
+.contactform h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+}
+.move{
+    display: flex;
+}
+
+
+
+
+footer{
+    padding: 90px 0;
+    background-color: rgb(11, 146, 101);
+   
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  
+  }
+  
+  .logo{
+    width: 180px;
+  }
+  
+  .social-media{
+    margin: 20px 0;
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #fc5c65;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+  }
+  
+  .btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+  }
+  
+  .btn:hover{
+    opacity: .7;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }
+  
